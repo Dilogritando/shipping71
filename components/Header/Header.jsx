@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className={styles.Header__container}>
         <Image
-              src="/vercel.svg"
+              src="/71lbs_logo.svg"
               alt="71lbs Logo, a magnifying glass icon over an opened box"
               width={72}
               height={16}
