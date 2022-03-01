@@ -1,0 +1,51 @@
+//Colors
+$dark-blue: #162121;
+$light-blue: #5c92c5;
+$mid-blue: #193d67;
+$green: #4a9b00;
+$orange: #ff7100;
+
+//Fonts
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: local("Proxima Nova Black"),
+    url("/fonts/PROXIMANOVABLACK-WEBFONT.TTF") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: local("Proxima Nova Thin"),
+    url("/fonts/PROXIMANOVATHIN-WEBFONT.TTF") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: local("Proxima Nova Semibold"),
+    url("/fonts/PROXIMANOVASEMIBOLD-WEBFONT.TTF") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Verdana";
+  src: local("Verdana"), url("/fonts/VERDANA.TTF") format("truetype");
+  font-display: swap;
+}
+
+$PNBlack: "Proxima Nova Black";
+$PNSemi: "Proxima Nova Semibold";
+$PNThin: "Proxima Nova Thin";
+
+//Media Queries - Responsive
+//Mobile
+$mobileMin: 319px;
+$mobileMax: 600px;
+$mobile: "(min-width: 319px) and (max-width: 600px)";
+
+//Tablet
+$tabletMin: 601px;
+$tabletMax: 1023px;
+$tablet: "(min-width: 601px) and (max-width: 1023px)";
+
+//Laptop
+$laptopMin: 1024px;
+$laptopMax: 2559px;
+$laptop: "(min-width: 1024px)";

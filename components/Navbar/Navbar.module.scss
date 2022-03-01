@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.Navbar {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    border: solid red 2px;
+    position: fixed;
+    top: 0;
+    left: 10px;
+  }
+  &__top {
+    &__burger {
+    }
+    &__signup {
+    }
+    &__menuOptions {
+    }
+  }
+  &__proper {
+    border: solid blue 3px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      &__options {
+        &__a {
+          font-family: $PNSemi;
+        }
+      }
+    }
+  }
+}

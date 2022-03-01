@@ -1,0 +1,18 @@
+.Header {
+  &__container {
+    border: solid green 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+  }
+  &__logo {
+  }
+  &__buttons {
+    &__SignUp {
+    }
+    &__Login {
+    }
+  }
+}
