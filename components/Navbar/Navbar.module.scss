@@ -1,36 +1,187 @@
 @import "../../styles/variables";
 
 .Navbar {
+  background-color: white;
+  color: $mid-blue;
+  font-family: $PNSemi;
   &__container {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    border: solid red 2px;
     position: fixed;
     top: 0;
     left: 10px;
-    margin: 0;
-    padding: 0;
+    margin: 5px 0;
+    padding: 10px 14px;
   }
   &__top {
-    &__burger {
-    }
-    &__signup {
-    }
+    display: flex;
+    flex-direction: column;
     &__menuOptions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+    &__burger {
+      border: 1px solid $light-blue;
+      border-radius: 4px;
+      background-color: transparent;
+      font-family: $PNSemi;
+      font-size: 1em;
+      color: $mid-blue;
+      padding: 6px;
+      cursor: pointer;
+      &__icon {
+        margin: 0 10px 0 0;
+      }
+    }
+    /*     &__close {
+      color: grey;
+      border: none;
+      background-color: transparent;
+      font-weight: 700;
+      text-align: center;
+    } */
+    &__signup {
+      border: 1px solid $light-blue;
+      border-radius: 4px;
+      background-color: $green;
+      color: white;
+      margin: 10px auto;
+      padding: 6px 17px;
+      font-family: $PNSemi;
     }
   }
   &__proper {
-    border: solid blue 3px;
     &__list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       flex-wrap: nowrap;
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
       &__options {
+        width: 100%;
+        list-style: none;
         &__a {
+          display: flex;
+          align-items: center;
           font-family: $PNSemi;
+          padding: 0;
+          margin: 5px 0;
+          cursor: pointer;
+        }
+        &__serviceContainer {
+          display: flex;
+          flex-direction: column;
+        }
+        &__home {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/navbarIcons/HomeIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__services {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          align-self: flex-start;
+          flex-wrap: nowrap;
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          font-size: inherit;
+          cursor: pointer;
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/navbarIcons/servicesIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+          &__list {
+            flex-direction: column;
+            margin: 0 0 0 50px;
+          }
+        }
+        &__about {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/navbarIcons/AboutIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__blog {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/navbarIcons/BlogsIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__contact {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/navbarIcons/ContactIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
+        }
+        &__login {
+          &::before {
+            content: "";
+            background-size: 100% 100%;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("../../public/navbarIcons/LoginIcon.svg");
+            margin: 0 18px 0 0;
+          }
+          &:hover {
+            color: $orange;
+          }
         }
       }
+    }
+  }
+  &__services {
+    list-style: none;
+    margin: 10px 0px;
+    cursor: pointer;
+    &:hover {
+      color: $orange;
     }
   }
 }

@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
-import Navbar from "../components/Navbar/Navbar.jsx";
 import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer";
 
@@ -47,7 +46,6 @@ export default function Home() {
         />
       </Head>
 
-      <Navbar />
       <Header />
       <main className={styles.main}>
         <div className={styles.hero}>
