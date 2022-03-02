@@ -1,0 +1,96 @@
+@import "../../styles/variables";
+
+.Hero {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    @media (min-width: $tabletMin) {
+      font-size: 4rem;
+      flex-direction: row;
+      padding: 0 2rem;
+      justify-content: space-between;
+    }
+  }
+  &__copy {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tabletMin) {
+      padding: 0 0.5em;
+      width: 50%;
+    }
+    &__title {
+      color: $header-blue;
+      font-family: $PNBlack;
+      font-size: 3rem;
+      line-height: 1.1em;
+      margin: 1em 0 1.5rem 0;
+      @media (min-width: $laptopMin) {
+        font-size: 4rem;
+      }
+    }
+    &__subtitle {
+      color: black;
+      font-size: 1.5rem;
+      line-height: 1em;
+      margin: 0 0 1rem 0;
+    }
+    &__text {
+      color: black;
+      font-size: 1rem;
+    }
+    &__btn {
+      margin: 20px 0 10px 0;
+      padding: 2px 13px;
+      width: fit-content;
+      border: solid 1px $light-blue;
+      border-radius: 4px;
+      background-color: $green;
+      color: white;
+      font-family: $PNSemi;
+      font-size: 1.3rem;
+      cursor: pointer;
+      align-self: center;
+    }
+  }
+  &__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    justify-content: center;
+    @media (min-width: $tabletMin) {
+      width: 50%;
+      padding: 100px 10px 40px 10px;
+    }
+    &__proper {
+      display: flex;
+      flex-direction: column;
+      &__placeholder {
+        width: 100%;
+      }
+    }
+    &__controller {
+      margin: 15px 0 0 0;
+      &__btn {
+        background-image: url("../../public/HomeVideoPlay.png");
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: $PNThin;
+        font-size: 1.5rem;
+        color: white;
+        border: none;
+        width: 228px;
+        height: 57px;
+        padding: 0 0 0 1.5em;
+        @media (max-width: $mobileMax) {
+          width: 143px;
+          height: 35px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

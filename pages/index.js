@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 
 import Header from "../components/Header/Header.jsx";
+import MainHomeMarch2022 from "../components/MainHome/MainHomeMarch2022.js";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
@@ -47,12 +48,8 @@ export default function Home() {
       </Head>
 
       <Header />
-      <main className={styles.main}>
-        <div className={styles.hero}>
-          <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-        </div>
+      <main className={styles.Home__main}>
+        <MainHomeMarch2022 />
       </main>
 
       <Footer />

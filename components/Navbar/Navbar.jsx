@@ -9,7 +9,6 @@ const Navbar = () => {
     setMenuOpen(!menuOpen)
   }
   const handleNavServices = () => {
-    console.log("Click on services option")
     setServicesOpen(!servicesOpen)
   }
   return (
