@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.scss";
 import Header from "../components/Header/Header.jsx";
 import MainHomeMarch2022 from "../components/MainHome/MainHomeMarch2022.js";
 import FeelingsHome from "../components/FeelingsHome/FeelingsHome.js";
+import ServicesSlider from "../components/ServicesSlider/ServicesSlider.js";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
@@ -53,6 +54,7 @@ export default function Home() {
       <main className={styles.Home__main}>
         <MainHomeMarch2022 />
         <FeelingsHome />
+        <ServicesSlider />
       </main>
 
       <Footer />

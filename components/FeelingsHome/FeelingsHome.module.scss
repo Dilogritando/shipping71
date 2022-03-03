@@ -11,12 +11,12 @@
   &__title {
     color: $header-blue;
     font-family: $PNBlack;
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 1.1em;
     margin: 1em 0 1.5rem 0;
     text-align: center;
     @media (min-width: $laptopMin) {
-      font-size: 4rem;
+      font-size: 2rem;
     }
   }
   &__cardsContainer {

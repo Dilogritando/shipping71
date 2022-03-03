@@ -1,0 +1,110 @@
+@import "../../styles/variables";
+
+.ServicesSlider {
+  &__container {
+    border: solid red 2px;
+    width: 100%;
+  }
+  &__title {
+    color: $header-blue;
+    font-family: $PNBlack;
+    font-size: 1.3rem;
+    line-height: 1.1em;
+    margin: 1em 0 1.5rem 0;
+    text-align: center;
+    @media (min-width: $laptopMin) {
+      font-size: 2rem;
+    }
+  }
+}
+.SliderNewModule {
+  font-family: $PNBlack;
+  color: black;
+  &__container {
+    height: 30vh;
+    width: 100%;
+    border: solid blue 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__arrowBack {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: darkgray;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+  }
+  &__contentContainer {
+    width: 80%;
+    min-width: 260px;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    border: solid brown 3px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  &__content {
+    width: 100%;
+    min-width: 252px;
+    margin: 0;
+    padding: 0;
+    border: solid orchid 3px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    &__text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      @media (min-width: $tabletMin) {
+        width: 50%;
+      }
+      &__title {
+        font-size: 2em;
+      }
+      &__subtitle {
+        font-size: 1.5em;
+      }
+      &__serviceText {
+        font-size: 1em;
+      }
+      &__btn {
+        border: 1px solid $light-blue;
+        border-radius: 4px;
+        background-color: $orange;
+        color: white;
+        margin: 10px auto;
+        padding: 6px 17px;
+        font-family: $PNSemi;
+      }
+    }
+    &__image {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      @media (min-width: $tabletMin) {
+        width: 50%;
+      }
+    }
+  }
+  &__arrowNext {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: darkgray;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+  }
+}
