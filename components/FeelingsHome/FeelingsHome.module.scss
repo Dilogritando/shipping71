@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.Feelings {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  &__title {
+    color: $header-blue;
+    font-family: $PNBlack;
+    font-size: 2rem;
+    line-height: 1.1em;
+    margin: 1em 0 1.5rem 0;
+    text-align: center;
+    @media (min-width: $laptopMin) {
+      font-size: 4rem;
+    }
+  }
+  &__cardsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: $tabletMin) {
+      flex-direction: row;
+    }
+  }
+  &__cards {
+    width: 100%;
+    &__figure {
+    }
+    &__hover {
+      padding: 10px;
+      &__text {
+        font-family: $PNSemi;
+        font-size: 1em;
+        text-align: center;
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+    &__msgBelow {
+      font-family: $PNSemi;
+      font-size: 1em;
+      text-align: center;
+    }
+  }
+  &__button {
+    border: 1px solid $light-blue;
+    border-radius: 4px;
+    background-color: $green;
+    color: white;
+    margin: 10px auto;
+    padding: 6px 17px;
+    font-family: $PNSemi;
+    cursor: pointer;
+  }
+}
