@@ -14,6 +14,9 @@
     padding: 0;
     margin: 0;
     z-index: 3;
+    //Animation CSS
+    animation: header-load 600ms ease-in;
+
     @media (min-width: $tabletMin) {
       justify-content: space-between;
       padding: 0 2rem;
@@ -73,5 +76,15 @@
       font-family: $PNSemi;
       font-size: 1em;
     }
+  }
+}
+
+//Animation CSS
+@keyframes header-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }

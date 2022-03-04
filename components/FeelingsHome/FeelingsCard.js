@@ -9,25 +9,30 @@ const FeelingsCard = (data) => {
   let imgSrc = `${data.image}`;
 
   const onMouseEnterCard = (e) => {
-    e.stopPropagation();
+    /* e.stopPropagation(); */
+    console.log("Enter");
     setIsLooking(true);
     setBorderStyle(`12px solid ${colorRef}`);
   };
   const onMouseLeaveCard = (e) => {
-    e.stopPropagation();
+    /* e.stopPropagation(); */
+    console.log("Leave");
     setIsLooking(false);
     setBorderStyle(`1px solid black`);
   };
 
   return (
-    <div className={styles.Feelings__cards} id={data.id}>
+    <div
+      className={styles.Feelings__cards}
+      id={data.id}
+      onMouseOver={onMouseEnterCard}
+      onMouseOut={onMouseLeaveCard}
+    >
       {isLooking === true ? (
         <figure className={styles.Feelings__cards__figure}>
           <div
             className={styles.Feelings__cards__hover}
             style={{ border: borderStyle }}
-            onMouseEnter={onMouseEnterCard}
-            onMouseOut={onMouseLeaveCard}
           >
             <p className={styles.Feelings__cards__hover__text}>
               {data.internalMsg}
@@ -40,14 +45,16 @@ const FeelingsCard = (data) => {
           </figcaption>
         </figure>
       ) : (
-        <figure className={styles.Feelings__cards__figure}>
+        <figure
+          className={styles.Feelings__cards__figure}
+          /* onMouseEnter={onMouseEnterCard}
+          onMouseOut={onMouseLeaveCard} */
+        >
           <img
             style={{ border: borderStyle }}
             src={imgSrc}
             alt={data.alt}
             className={styles.Feelings__cards__img}
-            onMouseEnter={onMouseEnterCard}
-            onMouseOut={onMouseLeaveCard}
           />
 
           <figcaption className={styles.Feelings__cards__msgBelow}>

@@ -39,3 +39,16 @@ h2 {
     font-size: 2rem;
   }
 }
+
+//Animation CSS
+*__container {
+  animation: containers-load 700ms ease-in 700ms;
+}
+@keyframes containers-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

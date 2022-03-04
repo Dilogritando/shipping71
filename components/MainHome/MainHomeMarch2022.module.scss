@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
+    //Animation CSS
+    animation: containers-load 900ms ease-in;
     @media (min-width: $tabletMin) {
       font-size: 4rem;
       flex-direction: row;
@@ -96,5 +98,15 @@
         }
       }
     }
+  }
+}
+
+//Animation CSS
+@keyframes containers-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
