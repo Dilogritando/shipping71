@@ -1,10 +1,11 @@
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 
 import Navbar from "../Navbar/Navbar.jsx";
 
-const Header = () => {
+const Header = ( {isMenuOpen, setIsMenuOpen} ) => {
   const handleSign = () => {
     console.log("Click on sign")
   }
@@ -13,10 +14,13 @@ const Header = () => {
   }
   return (
     <div className={styles.Header__container}>
-      <Navbar />
+      <Navbar
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
 
       <div className={styles.Header__container__logo}>
-        <Link href="/">
+        <Link href="/" passHref >
           <Image
             src="/71lbs_logo.svg"
             alt="71lbs Logo, a magnifying glass icon over an opened box"

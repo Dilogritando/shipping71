@@ -1,12 +1,13 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
 
-const Navbar = () => {
+const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
   const handleMenu = () => {
     setMenuOpen(!menuOpen)
+    setIsMenuOpen(!isMenuOpen)
   }
   const handleNavServices = () => {
     setServicesOpen(!servicesOpen)

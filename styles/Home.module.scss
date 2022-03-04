@@ -13,6 +13,11 @@
     justify-content: center;
     align-items: center;
     /* border: solid red 3px; */
+    &__menuOpen {
+      @media (min-width: $laptopMin) {
+        margin: 0 0 0 225px;
+      }
+    }
   }
 }
 

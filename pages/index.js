@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
+import React, { useState } from "react";
 
 import Header from "../components/Header/Header.jsx";
 import MainHomeMarch2022 from "../components/MainHome/MainHomeMarch2022.js";
@@ -16,6 +17,7 @@ import SocialMediaModule from "../components/SocialMediaModule/SocialMediaModule
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className={styles.Home__container}>
       <Head>
@@ -56,9 +58,15 @@ export default function Home() {
         />
       </Head>
 
-      <Header />
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
-      <main className={styles.Home__main}>
+      <main
+        className={
+          isMenuOpen === false
+            ? `${styles.Home__main}`
+            : `${styles.Home__main__menuOpen}`
+        }
+      >
         <MainHomeMarch2022 /> {/* OK-Friday */}
         <FeelingsHome /> {/* OK-Friday */}
         <ServicesSlider /> {/* OK-Friday */}
