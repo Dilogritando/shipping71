@@ -1,19 +1,14 @@
 import styles from "./BrandsGallery.module.scss";
-import TestimonialsPlaceholder from "../../public/PlaceholdersHome/TestimonialsHome.png";
 import Image from "next/image";
 import AdamsApple_Logo from "../../public/BrandsLogos/AdamsApple_Logo.png";
 import BloomsyBox_Logo from "../../public/BrandsLogos/BloomsyBox_Logo.png";
-import Budsies_Logo from "../../public/BrandsLogos/Budsies_Logo.png";
 import GetMaineLobster_Logo from "../../public/BrandsLogos/GetMaineLobster_Logo.png";
 import Kitsch_Logo from "../../public/BrandsLogos/Kitsch_Logo.png";
 import OscarDeLaRenta_Logo from "../../public/BrandsLogos/OscarDeLaRenta_Logo.png";
 import PickleBallCentral_Logo from "../../public/BrandsLogos/PickleBallCentral_Logo.png";
 import Quickbooks_Logo from "../../public/BrandsLogos/Quickbooks_Logo.png";
-import Shipmonk_Logo from "../../public/BrandsLogos/Shipmonk_Logo.png";
-import SkatePro_Logo from "../../public/BrandsLogos/SkatePro_Logo.png";
 import Sonnys_Logo from "../../public/BrandsLogos/Sonnys_Logo.png";
 import Tatcha_Logo from "../../public/BrandsLogos/Tatcha_Logo.png";
-import UnderwearStation_Logo from "../../public/BrandsLogos/UnderwearStation_Logo.png";
 
 const BrandsGallery = () => {
   return (

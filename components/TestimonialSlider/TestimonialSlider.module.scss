@@ -1,1 +1,29 @@
 @import "../../styles/variables";
+
+.TestimonialSlider {
+  &__container {
+    /* border: solid red 3px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 0 2rem;
+    @media (min-width: $tabletMin) {
+      /* font-size: 4rem; */
+      flex-direction: row;
+      /* padding: 0 2rem; */
+      /* justify-content: space-between; */
+      margin: 0 2rem 6rem 2rem;
+      padding: 0 9rem;
+    }
+  }
+  &__image {
+  }
+  &__source {
+  }
+  &__divider {
+  }
+  &__testimonial {
+  }
+}

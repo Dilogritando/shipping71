@@ -62,11 +62,11 @@ export default function Home() {
         <MainHomeMarch2022 /> {/* OK-Friday */}
         <FeelingsHome /> {/* OK-Friday */}
         <ServicesSlider /> {/* OK-Friday */}
-        <LoginHome />
-        <BrandsGallery />
-        <TestimonialSlider />
-        <FactsFigures /> {/* ImageOK DoubleTitle */}
-        <Calculator /> {/* ImageOK DoubleTitle */}
+        <LoginHome /> {/* OK-Friday */}
+        <BrandsGallery /> {/* OK-Friday */}
+        <TestimonialSlider /> {/* OK-Friday */}
+        <FactsFigures /> {/* OK-Friday */}
+        <Calculator /> {/* OK-Friday */}
         <BlogsModule /> {/* ImageOK */}
         {/* <SocialMediaModule /> */}
       </main>
