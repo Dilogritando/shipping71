@@ -1,8 +1,8 @@
 @import "../../styles/variables";
 
-.Feelings {
+.FactsFigures {
   &__container {
-    width: 100%;
+    /* border: solid red 3px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,36 +17,13 @@
   }
   &__title {
   }
-  &__cardsContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    @media (min-width: $tabletMin) {
-      flex-direction: row;
+  &__facts {
+    &__box {
     }
   }
-  &__cards {
-    width: 100%;
-    &__figure {
-    }
-    &__hover {
-      padding: 10px;
-      &__text {
-        font-family: $PNSemi;
-        font-size: 1em;
-        text-align: center;
-      }
-    }
-    &__img {
-      width: 100%;
-    }
-    &__msgBelow {
-      font-family: $PNSemi;
-      font-size: 1em;
-      text-align: center;
-    }
+  &__image {
   }
-  &__button {
+  &__btn {
     border: 1px solid $light-blue;
     border-radius: 4px;
     background-color: $green;
@@ -54,7 +31,7 @@
     margin: 10px auto;
     padding: 6px 17px;
     font-family: $PNSemi;
-    font-size: 1.3rem;
     cursor: pointer;
+    font-size: 1.3em;
   }
 }

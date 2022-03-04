@@ -6,6 +6,13 @@ import Header from "../components/Header/Header.jsx";
 import MainHomeMarch2022 from "../components/MainHome/MainHomeMarch2022.js";
 import FeelingsHome from "../components/FeelingsHome/FeelingsHome.js";
 import ServicesSlider from "../components/ServicesSlider/ServicesSlider.js";
+import LoginHome from "../components/LoginHome/LoginHome";
+import BrandsGallery from "../components/BrandsGallery/BrandsGallery";
+import TestimonialSlider from "../components/TestimonialSlider/TestimonialSlider";
+import FactsFigures from "../components/FactsFigures/FactsFigures";
+import Calculator from "../components/Calculator/Calculator";
+import BlogsModule from "../components/BlogsModule/BlogsModule";
+import SocialMediaModule from "../components/SocialMediaModule/SocialMediaModule";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
@@ -52,9 +59,16 @@ export default function Home() {
       <Header />
 
       <main className={styles.Home__main}>
-        <MainHomeMarch2022 />
-        <FeelingsHome />
-        <ServicesSlider />
+        <MainHomeMarch2022 /> {/* OK-Friday */}
+        <FeelingsHome /> {/* OK-Friday */}
+        <ServicesSlider /> {/* OK-Friday */}
+        <LoginHome />
+        <BrandsGallery />
+        <TestimonialSlider />
+        <FactsFigures /> {/* ImageOK DoubleTitle */}
+        <Calculator /> {/* ImageOK DoubleTitle */}
+        <BlogsModule /> {/* ImageOK */}
+        {/* <SocialMediaModule /> */}
       </main>
 
       <Footer />

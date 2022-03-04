@@ -16,12 +16,13 @@
     z-index: 3;
     @media (min-width: $tabletMin) {
       justify-content: space-between;
+      padding: 0 2rem;
     }
     &__logo {
       width: 90px;
       position: absolute;
       top: 10px;
-      left: 37%;
+      left: 44%;
       @media (min-width: $tabletMin) {
         /* position: relative; */
         margin: 0 auto;

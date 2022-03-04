@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SliderNewModule = (info) => {
   let servicesArray = info.info;
-  console.log("servicesArray es:", servicesArray);
+/*   console.log("servicesArray es:", servicesArray); */
 
   const totalSlides = servicesArray.length;
   let i = 0;
