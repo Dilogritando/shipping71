@@ -10,39 +10,39 @@ const Footer = () => {
           <h4 className={styles.Footer__title}>Service Directory</h4>
           <ul className={styles.Footer__list}>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/shipping-contract-negotiations">
                 <a className={styles.Footer__links}>Contract Negotiations</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/shipping-refunds">
                 <a className={styles.Footer__links}>Shipping Refunds</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/lost-damaged-shipping-claims">
                 <a className={styles.Footer__links}>
                   Lost &amp; Damaged Claims
                 </a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/amazon-shipping-fba">
                 <a className={styles.Footer__links}>Amazon FBA</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/shipping-insurance">
                 <a className={styles.Footer__links}>Shipping Insurance</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/fedex-ex-ray-shipping">
                 <a className={styles.Footer__links}>FedEx Ex-Ray</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/premium-shipping-analytics">
                 <a className={styles.Footer__links}>
                   Premium Shipping Analytics
                 </a>
@@ -54,43 +54,44 @@ const Footer = () => {
           <h4 className={styles.Footer__title}>Company</h4>
           <ul className={styles.Footer__list}>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/about-us">
                 <a className={styles.Footer__links}>About Us</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/shipping-refunds-claims-experts">
                 <a className={styles.Footer__links}>Meet the Team</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/shipping-refunds-claims-success-testimonials">
                 <a className={styles.Footer__links}>Testimonials</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="https://blog.71lbs.com/">
                 <a className={styles.Footer__links}>Blogs</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/privacy-policy">
                 <a className={styles.Footer__links}>Privacy Policy</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/terms-of-service">
                 <a className={styles.Footer__links}>Terms of Service</a>
               </Link>
             </li>
             <li className={styles.Footer__list__options}>
-              <Link href="/">
+              <Link href="/contact-us">
                 <a className={styles.Footer__links}>Contact Us</a>
               </Link>
             </li>
           </ul>
         </div>
       </div>
+      {/* Social media icons and links */}
       <div className={styles.Footer__bottom}>
         <div className={styles.Footer__bottom__logo}>
           <Link href="/" passHref>

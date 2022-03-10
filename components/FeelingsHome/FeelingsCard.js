@@ -9,14 +9,10 @@ const FeelingsCard = (data) => {
   let imgSrc = `${data.image}`;
 
   const onMouseEnterCard = (e) => {
-    /* e.stopPropagation(); */
-    console.log("Enter");
     setIsLooking(true);
     setBorderStyle(`12px solid ${colorRef}`);
   };
   const onMouseLeaveCard = (e) => {
-    /* e.stopPropagation(); */
-    console.log("Leave");
     setIsLooking(false);
     setBorderStyle(`1px solid black`);
   };

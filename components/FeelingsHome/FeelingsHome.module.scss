@@ -26,6 +26,9 @@
       height: 15.4rem;
       margin: 0 0 7rem 0;
     }
+    @media (max-width: $tabletMin) {
+      display: none;
+    }
   }
   &__cards {
     width: 100%;

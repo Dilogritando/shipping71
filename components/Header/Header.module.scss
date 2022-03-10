@@ -15,7 +15,7 @@
     margin: 0;
     z-index: 3;
     //Animation CSS
-    animation: header-load 600ms ease-in;
+    /* animation: header-load 600ms ease-in; */
 
     @media (min-width: $tabletMin) {
       justify-content: space-between;
