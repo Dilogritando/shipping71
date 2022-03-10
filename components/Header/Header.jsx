@@ -12,6 +12,7 @@ const Header = ( {isMenuOpen, setIsMenuOpen} ) => {
   const handleLogin = () => {
     console.log("Click on login")
   }
+
   return (
     <div className={styles.Header__container}>
       <Navbar
@@ -20,14 +21,16 @@ const Header = ( {isMenuOpen, setIsMenuOpen} ) => {
       />
 
       <div className={styles.Header__container__logo}>
-        <Link href="/" passHref >
-          <Image
-            src="/71lbs_logo.svg"
-            alt="71lbs Logo, a magnifying glass icon over an opened box"
-            width={122}
-            height={80}
-            className={styles.Header__logo}
-          />
+        <Link href="/">
+          <a>
+            <Image
+              src="/71lbs_logo.svg"
+              alt="71lbs Logo, a magnifying glass icon over an opened box"
+              width={122}
+              height={80}
+              className={styles.Header__logo}
+            />
+          </a>
         </Link>
       </div>
       <div className={styles.Header__buttons}>

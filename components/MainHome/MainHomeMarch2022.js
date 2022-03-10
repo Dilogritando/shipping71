@@ -22,11 +22,19 @@ const MainHomeMarch2022 = () => {
       </div>
       <div className={styles.Hero__video}>
         <div className={styles.Hero__video__proper}>
-          <img
-            src="/PlaceholderHomeVideo.png"
-            alt=""
-            className={styles.Hero__video__proper__placeholder}
-          />
+          <div className="modal-body">
+            <video
+              id="root-video"
+              controls=""
+              style={{ width: "500px", height: "500px" }}
+            >
+              <source
+                src="https://fdbef0a76c08b982db11-0672d8539c129f26551dec2c76292811.ssl.cf5.rackcdn.com/FreeShippingAssessment%20video.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
         <div className={styles.Hero__video__controller}>
           <button className={styles.Hero__video__controller__btn}>
