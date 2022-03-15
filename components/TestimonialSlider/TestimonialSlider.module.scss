@@ -3,27 +3,39 @@
 .TestimonialSlider {
   &__container {
     /* border: solid red 3px; */
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
+    border: solid purple 3px;
     @media (min-width: $tabletMin) {
       /* font-size: 4rem; */
       flex-direction: row;
       /* padding: 0 2rem; */
       /* justify-content: space-between; */
-      margin: 0 2rem 6rem 2rem;
-      padding: 0 9rem;
+      margin: 0 0 6rem 0;
+      /* padding: 0 9rem; */
+    }
+    &__carousel {
+      width: 100%;
+      border: solid 5px violet;
+    }
+    &__slide {
+      display: flex;
+      flex-direction: row;
+      border: solid red 3px;
+      width: 100%;
     }
   }
-  &__image {
-  }
   &__source {
+    border: solid yellow 3px;
   }
   &__divider {
+    border: solid blue 3px;
   }
   &__testimonial {
+    border: solid green 3px;
   }
 }

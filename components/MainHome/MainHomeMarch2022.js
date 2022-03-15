@@ -26,21 +26,12 @@ const MainHomeMarch2022 = () => {
         <div className={styles.Hero__video__proper}>
           <ReactPlayer
             light
-            width="500px"
-            height="500px"
+            width="100%"
+            height="240px"
             url="https://fdbef0a76c08b982db11-0672d8539c129f26551dec2c76292811.ssl.cf5.rackcdn.com/FreeShippingAssessment%20video.mp4"
             controls
-            /* fallback="/PlaceholderHomeVideo.png" */
+            fallback="/PlaceholderHomeVideo.png"
           />
-          {/*  <div className="modal-body">
-            <video
-              id="root-video"
-              controls=""
-              style={{ width: "500px", height: "500px" }}
-            >
-              />
-            </video>
-          </div> */}
         </div>
         <div className={styles.Hero__video__controller}>
           <button className={styles.Hero__video__controller__btn}>

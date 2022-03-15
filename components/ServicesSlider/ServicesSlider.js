@@ -1,8 +1,12 @@
+import ReactDOM from "react-dom";
 import styles from "./ServicesSlider.module.scss";
-import SliderNewModule from "./SliderNewModule.js";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import PlaceholderServiceSlider from "../../public/PlaceholderServiceSlider.png";
 import ContractNSlider from "../../public/ContractNSlider.png";
 import RefundsSlider from "../../public/RefundsSlider.png";
+import Image from "next/image";
+import { Carousel } from "react-responsive-carousel";
+import Link from "next/link";
 
 const ServicesSlider = () => {
   const servicesContentSlider = [
@@ -12,8 +16,8 @@ const ServicesSlider = () => {
         "We have found that more than 62.3% of companies who ship with UPS & FedEx are overpaying the carrier.",
       serviceText:
         "How do you know if you have the best agreement for your shipping spend? Working with 71lbs ensures that you know the answer to this question & more.",
-      redirectURL: "/",
-      serviceImage: ContractNSlider.src,
+      redirectURL: "/services/shipping-contract-negotiations",
+      serviceImage: ContractNSlider,
       altImage: "",
     },
     {
@@ -21,8 +25,8 @@ const ServicesSlider = () => {
       subtitle: "There are over $2 BILLION in unclaimed late delivery refunds.",
       serviceText:
         "Did you know that if your FedEx or UPS shipment is late-even by 60 seconds-you’re entitled to a full refund of the cost of your shipment? ",
-      redirectURL: "/",
-      serviceImage: RefundsSlider.src,
+      redirectURL: "/services/shipping-refunds",
+      serviceImage: RefundsSlider,
       altImage: "",
     },
     {
@@ -30,8 +34,8 @@ const ServicesSlider = () => {
       subtitle: "Other subtitle",
       serviceText:
         "Other copy Lorem ipsum dolor, sit amet consectetur adipisicing.",
-      redirectURL: "/",
-      serviceImage: PlaceholderServiceSlider.src,
+      redirectURL: "/services/shipping-insurance",
+      serviceImage: PlaceholderServiceSlider,
       altImage: "",
     },
     {
@@ -40,17 +44,50 @@ const ServicesSlider = () => {
         "Companies leave money on the table each day either because they don't file the lost or damaged claim or don't work the claim fully.",
       serviceText:
         "The process to recover your due refunds is tedious, time-consuming & does not always yield a refund. When you sign up for our services, we can do the heavy lifting for you, and will not charge for it until you see your refunds.",
-      redirectURL: "/",
-      serviceImage: PlaceholderServiceSlider.src,
+      redirectURL: "/services/lost-damaged-shipping-claims",
+      serviceImage: PlaceholderServiceSlider,
       altImage: "",
     },
   ];
+  const slideStructure = (service, index) => {
+    return (
+      <div className={styles.SliderNewModule__content} key={index}>
+        <div className={styles.SliderNewModule__content__text}>
+          <h3 className={styles.SliderNewModule__content__text__title}>
+            {service.title}
+          </h3>
+          <h4 className={styles.SliderNewModule__content__text__subtitle}>
+            {service.subtitle}
+          </h4>
+          <p className={styles.SliderNewModule__content__text__serviceText}>
+            {service.serviceText}
+          </p>
+          <button className={styles.SliderNewModule__content__text__btn}>
+            <Link href={service.redirectURL}>
+              <a>Learn More</a>
+            </Link>
+          </button>
+        </div>
+        <div className={styles.SliderNewModule__content__image}>
+          <Image
+            src={service.serviceImage}
+            alt={service.altImage}
+            layout="fill"
+          />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className={styles.ServicesSlider__container}>
       <h2 className={styles.ServicesSlider__title}>
         How We Help Thousands Of Companies
       </h2>
-      <SliderNewModule info={servicesContentSlider} />
+      <Carousel showThumbs={false}>
+        {servicesContentSlider.map((service, index) => {
+          return slideStructure(service, index);
+        })}
+      </Carousel>
     </div>
   );
 };

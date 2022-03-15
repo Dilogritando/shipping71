@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import styles from "../styles/Home.module.scss";
+import styles from "../../styles/Home.module.scss";
 
 import Head from "next/head";
-import Header from "../components/Header/Header.jsx";
-import Footer from "../components/Footer/Footer";
+import Header from "../../components/Header/Header.jsx";
+import Footer from "../../components/Footer/Footer";
 
 const ShippingInsurance = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
