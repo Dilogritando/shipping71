@@ -18,44 +18,61 @@ const TestimonialSlider = () => {
       logoAlt: "Logo of UnderwearStation company",
       sourceName: "Joel G.",
       sourceRole: "President",
-      sourceQuote:
-        "71lbs helped us negotiate our FedEx rates way lower than what I had been able to do after years of negotiating.",
+      sourceQuote: (
+        <p>
+          71lbs helped us <span>negotiate our FedEx rates way lower</span> than
+          what I had been able to do after years of negotiating.
+        </p>
+      ),
     },
     {
       logoUrl: Shipmonk_Logo,
       logoAlt: "Logo of Shipmonk company",
       sourceName: "Jan B.",
       sourceRole: "CEO",
-      sourceQuote:
-        "There is no obligation. It doesn’t cost anything. You just get the money. It’s pretty much a no-brainer decision.",
+      sourceQuote: (
+        <p>
+          There is no obligation. <span>It doesn’t cost anything.</span> You
+          just get the money. It’s pretty much a no-brainer decision.
+        </p>
+      ),
     },
     {
       logoUrl: Budsies_Logo,
       logoAlt: "Logo of Budsies company",
       sourceName: "Melissa H.",
       sourceRole: "VP of Ops.",
-      sourceQuote:
-        "Signing up with 71lbs was effortless! we essentially didn't have to do anything and we started receiving money.",
+      sourceQuote: (
+        <p>
+          Signing up with 71lbs was effortless! we essentially didn’t have to do
+          anything and <span>we started receiving money.</span>
+        </p>
+      ),
     },
     {
       logoUrl: SkatePro_Logo,
       logoAlt: "Logo of SkatePro company",
       sourceName: "Daron H.",
       sourceRole: "President",
-      sourceQuote:
-        "We have been saving thousands of dollars a month. It’s frictionless, just as promised. ",
+      sourceQuote: (
+        <p>
+          We have been <span>saving thousands of dollars</span> a month. It’s
+          frictionless, just as promised.
+        </p>
+      ),
     },
   ];
+
   const testimonialSlideStructure = (testimonial, index) => {
     return (
-      <div className={styles.TestimonialSlider__container__slide}>
+      <div className={styles.TestimonialSlider__container__slide} key={index}>
         <div className={styles.TestimonialSlider__source}>
           <div className={styles.TestimonialSlider__source__image}>
             <Image
               src={testimonial.logoUrl}
               alt={testimonial.logoAlt}
-              width="50px"
-              height="50px"
+              width="100%"
+              height="100%"
             />
           </div>
           <p className={styles.TestimonialSlider__source__name}>
@@ -67,7 +84,7 @@ const TestimonialSlider = () => {
         </div>
 
         <Image
-          width="10px"
+          width="4px"
           height="100%"
           src={TestimonialsDivider}
           alt="Blue vertical line dividing the brand logo and source from quote"
