@@ -67,15 +67,15 @@ export default function Home() {
             : `${styles.Home__main__menuOpen}`
         }
       >
-        <MainHomeMarch2022 /> {/* OK-Friday */}
-        <FeelingsHome /> {/* OK-Friday */}
-        <ServicesSlider /> {/* OK-Friday */}
-        <LoginHome /> {/* OK-Friday */}
-        <BrandsGallery /> {/* OK-Friday */}
-        <TestimonialSlider /> {/* OK-Friday */}
-        <FactsFigures /> {/* OK-Friday */}
-        <Calculator /> {/* OK-Friday */}
-        <BlogsModule /> {/* ImageOK */}
+        <MainHomeMarch2022 /> 
+        <FeelingsHome /> 
+        <ServicesSlider /> 
+        <LoginHome /> 
+        <BrandsGallery /> 
+        <TestimonialSlider /> 
+        <FactsFigures /> 
+        <Calculator /> {/* Pending - Calculator script?*/}
+        {/* <BlogsModule /> */} {/* Pending - Last -- will need permissions*/}
         {/* <SocialMediaModule /> */}
       </main>
 

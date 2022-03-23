@@ -71,8 +71,8 @@ const TestimonialSlider = () => {
             <Image
               src={testimonial.logoUrl}
               alt={testimonial.logoAlt}
-              width="100%"
-              height="100%"
+              layout="fill"
+              objectFit="contain"
             />
           </div>
           <p className={styles.TestimonialSlider__source__name}>

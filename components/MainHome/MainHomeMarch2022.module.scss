@@ -2,6 +2,7 @@
 
 .Hero {
   &__container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
@@ -69,14 +70,37 @@
       padding: 100px 10px 40px 10px;
     }
     &__proper {
+      width: 100%;
       display: flex;
       flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
+      /* border: solid 3px purple; */
       &__placeholder {
         width: 100%;
       }
+      &__player {
+        height: 369px;
+        /* border: solid red 2px; */
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        .react-player__preview {
+          /* border: solid blue 2px; */
+        }
+      }
     }
     &__controller {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
       margin: 15px 0 0 0;
       cursor: pointer;
       &__btn {

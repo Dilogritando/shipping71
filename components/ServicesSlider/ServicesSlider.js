@@ -83,7 +83,7 @@ const ServicesSlider = () => {
       <h2 className={styles.ServicesSlider__title}>
         How We Help Thousands Of Companies
       </h2>
-      <Carousel showThumbs={false}>
+      <Carousel showThumbs={false} className={styles.ServicesSlider__carousel}>
         {servicesContentSlider.map((service, index) => {
           return slideStructure(service, index);
         })}

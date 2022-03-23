@@ -25,12 +25,13 @@ const MainHomeMarch2022 = () => {
       <div className={styles.Hero__video}>
         <div className={styles.Hero__video__proper}>
           <ReactPlayer
-            light
-            width="100%"
-            height="240px"
+            width="640px"
+            /* height="100%" */
             url="https://fdbef0a76c08b982db11-0672d8539c129f26551dec2c76292811.ssl.cf5.rackcdn.com/FreeShippingAssessment%20video.mp4"
-            controls
+            controls="true"
             fallback="/PlaceholderHomeVideo.png"
+            light="/PlaceholderHomeVideo.png"
+            className={styles.Hero__video__proper__player}
           />
         </div>
         <div className={styles.Hero__video__controller}>

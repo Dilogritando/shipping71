@@ -20,13 +20,14 @@
     }
     &__carousel {
       width: 100%;
-      /* border: solid 5px violet; */
+      /*  border: solid 5px violet; */
     }
     &__slide {
       display: flex;
       flex-direction: row;
       /* border: solid red 3px; */
       width: 100%;
+      margin: 0 0 40px 0;
     }
   }
   &__source {
@@ -38,9 +39,17 @@
     align-items: center;
     align-content: center;
     &__image {
-      border: solid red 2px;
-      /* height: 50%; */
-      width: fit-content;
+      width: 227px;
+      height: 227px;
+      position: relative;
+      margin: 0 0 14px 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      /* object-fit: cover; */
     }
     &__name {
       font-size: 40px;
