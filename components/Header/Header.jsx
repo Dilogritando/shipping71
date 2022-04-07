@@ -5,6 +5,7 @@ import styles from "./Header.module.scss";
 import TransparentLogo from "../../public/71assets/71lbs_LogoTransparent.png"
 
 import Navbar from "../Navbar/Navbar.jsx";
+import NavbarLaptop from "../Navbar/NavbarLaptop.jsx";
 
 const Header = ( {isMenuOpen, setIsMenuOpen} ) => {
   const handleSign = () => {
@@ -23,17 +24,21 @@ const Header = ( {isMenuOpen, setIsMenuOpen} ) => {
 
       <div className={styles.Header__container__logo}>
         <Link href="/">
-          <a>
+          <a className={styles.Header__container__logo__Link}>
             <Image
               src={TransparentLogo}
               alt="71lbs Logo, a magnifying glass icon over an opened box"
-              width={122}
-              height={80}
+              /* width={122}
+              height={80} */
               className={styles.Header__container__logo__proper}
             />
           </a>
         </Link>
       </div>
+      <NavbarLaptop
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+      />
       <div className={styles.Header__buttons}>
           <button
             className={styles.Header__buttons__SignUp}

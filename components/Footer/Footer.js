@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <footer className={styles.Footer__container}>
       <div className={styles.Footer__container__content}>
-        {/* Logo, Social media icons and links- Change "bottom" to "left"*/}
         <div className={styles.Footer__left}>
           <div className={styles.Footer__left__logo}>
             <Link href="/" passHref>
@@ -60,8 +59,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Change "right" to "right" */}
         <div className={styles.Footer__right}>
           <div className={styles.Footer__right__Service}>
             <h4 className={styles.Footer__title}>Service Directory</h4>
