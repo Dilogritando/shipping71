@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./FeelingsHome.module.scss";
 
 const FeelingsCard = (data) => {
@@ -46,7 +47,7 @@ const FeelingsCard = (data) => {
           /* onMouseEnter={onMouseEnterCard}
           onMouseOut={onMouseLeaveCard} */
         >
-          <img
+          <Image
             style={{ border: borderStyle }}
             src={imgSrc}
             alt={data.alt}

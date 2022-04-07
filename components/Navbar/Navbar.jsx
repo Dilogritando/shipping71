@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Navbar.module.scss";
 
 const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
@@ -20,7 +21,7 @@ const Navbar = ({isMenuOpen, setIsMenuOpen}) => {
             className={styles.Navbar__top__burger}
             onClick={handleMenu}
           >
-            <img
+            <Image
               src="/burgerIcon.png"
               alt="Burger menu icon"
               className={styles.Navbar__top__burger__icon}
