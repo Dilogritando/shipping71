@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.scss";
+import TransparentLogo from "../../public/71assets/71lbs_LogoTransparent.png"
 
 import Navbar from "../Navbar/Navbar.jsx";
 
@@ -24,11 +25,11 @@ const Header = ( {isMenuOpen, setIsMenuOpen} ) => {
         <Link href="/">
           <a>
             <Image
-              src="/71lbs_logo.svg"
+              src={TransparentLogo}
               alt="71lbs Logo, a magnifying glass icon over an opened box"
               width={122}
               height={80}
-              className={styles.Header__logo}
+              className={styles.Header__container__logo__proper}
             />
           </a>
         </Link>

@@ -21,9 +21,7 @@ export default function Home() {
   return (
     <div className={styles.Home__container}>
       <Head>
-        <title>
-          71lbs | Contract Negotiations | FedEx &amp; UPS Shipping Refunds{" "}
-        </title>
+        <title>71lbs | Shipping refunds &amp; savings |</title>
         <meta
           name="71lbs"
           content="Save money and time in FedEx/UPS contract negotiations, late delivery refunds, lost/damaged claims, shipping insurance, and more."
@@ -67,14 +65,14 @@ export default function Home() {
             : `${styles.Home__main__menuOpen}`
         }
       >
-        <MainHomeMarch2022 /> 
-        <FeelingsHome /> 
-        <ServicesSlider /> 
-        <LoginHome /> 
-        <BrandsGallery /> 
-        <TestimonialSlider /> 
-        <FactsFigures /> 
-        <Calculator /> {/* Pending - Calculator script?*/}
+        <MainHomeMarch2022 />
+        {/* <FeelingsHome />  */}
+        {/* <ServicesSlider />  */}
+        <BrandsGallery />
+        <TestimonialSlider />
+        <LoginHome />
+        {/* <FactsFigures /> */}
+        {/* <Calculator /> */} {/* Pending - Calculator script?*/}
         {/* <BlogsModule /> */} {/* Pending - Last -- will need permissions*/}
         {/* <SocialMediaModule /> */}
       </main>

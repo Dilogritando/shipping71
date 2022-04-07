@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.scss";
-
+import TransparentWhiteLogo from "../../public/71assets/71lbs_Logo_WHITE 1.png";
+//71lbs_Logo_WHITE 1.png
 const Footer = () => {
   return (
     <footer className={styles.Footer__container}>
@@ -95,8 +96,8 @@ const Footer = () => {
       <div className={styles.Footer__bottom}>
         <div className={styles.Footer__bottom__logo}>
           <Link href="/" passHref>
-            <img
-              src="/71lbs_Logo_WHITE.svg"
+            <Image
+              src={TransparentWhiteLogo}
               alt="71lbs Logo, white"
               className={styles.Footer__bottom__logo__image}
             />
@@ -106,28 +107,28 @@ const Footer = () => {
           <h4 className={styles.Footer__title}>Follow</h4>
           <div className={styles.socialIcons}>
             <Link href="https://www.facebook.com/71lbs" passHref>
-              <img
+              <Image
                 src="/Facebook_LOGO.svg"
                 alt="Link to 71lbs Facebook page"
                 className={styles.socialIcons__logos}
               />
             </Link>
             <Link href="https://www.instagram.com/71lbs_/" passHref>
-              <img
+              <Image
                 src="/Instagram_LOGO.svg"
                 alt="Link to 71lbs Instagram page"
                 className={styles.socialIcons__logos}
               />
             </Link>
             <Link href="https://www.linkedin.com/company/71lbs" passHref>
-              <img
+              <Image
                 src="/LinkedIn_LOGO.svg"
                 alt="Link to 71lbs LinkedIn page"
                 className={styles.socialIcons__logos}
               />
             </Link>
             <Link href="https://twitter.com/71lbs" passHref>
-              <img
+              <Image
                 src="/Twitter_LOGO.svg"
                 alt="Link to 71lbs Twitter page"
                 className={styles.socialIcons__logos}

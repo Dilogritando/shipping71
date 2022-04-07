@@ -6,7 +6,7 @@ To see the approved mock-ups, you can check the [Figma](https://www.figma.com/fi
 
 ✅It includes homepage, product/services pages, etc.
 
-❌It does not include but not the internal dashboard.
+❌It does not include (yet) the internal dashboard-frontEnd.
 
 ❌If you are looking for the e-mail templates, custom landings, or blog posts please refer to the marketing team and their access to [Hubspot](https://app.hubspot.com/website/5470644/blog/posts)
 
@@ -59,10 +59,9 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Information about installed packages and dependencies
 
-|:-------------:|:----: |
+|:-----------------------:|:-------------------------: |
 | [React-Player](https://www.npmjs.com/package/react-player) v.2.9.0 |For videos such as Home hero video |
 | [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel) v.3.2.23 | For sliders such as the home "Our services" slider and "Testimonial" slider|
-| [Placeholder]() v. | For **\_ such as \_\_\_** |
 
 ## Other information about NextJS
 
