@@ -2,36 +2,55 @@
 
 .Footer {
   &__container {
+    border: solid 3px purple;
     background-color: $footer-blue;
-    display: flex;
-    flex-direction: column;
     color: white;
     font-family: $PNSemi;
-    width: 100vw;
-    padding: 4em 2rem 2em 2rem;
-    margin: 10px 0 0 0;
+    width: 100%;
+    margin: 64px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 19px 33px 45px 33px;
+
+    @media (min-width: $tabletMin) {
+      padding: 47px;
+      flex-direction: column;
+    }
+    &__content{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @media (min-width: $tabletMin) {
+        flex-direction: row;
+        margin: 64px 0 13px 0;
+      }
+    }
   }
-  &__title {
-    font-size: 36px;
-    padding: 0;
-    margin: 0 0 1rem 0;
-  }
-  &__top {
+
+  &__right {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     align-items: flex-start;
-    @media (min-width: $tabletMin) {
+    @media (min-width: $tabletMax) {
+      width: 80%;
       flex-direction: row;
       justify-content: space-between;
       padding: 0 3rem;
+      margin: 4rem 0 0 4rem;
+    }
+    @media (min-width: $laptopMin) {
+      padding: 0;
+      margin: 2rem 0 0 4rem;
+      justify-content: space-around;
     }
     &__Service {
       padding: 0;
       margin: 0 0 2em 0;
       @media (min-width: $laptopMin) {
-        width: 59%;
+        padding: 0 72px 0 0;
+        border-right: 1px solid white;
       }
     }
     &__Company {
@@ -42,16 +61,21 @@
       }
     }
   }
-  &__bottom {
+  &__left {
     width: 100%;
     padding: 0;
     margin: 25px 0 15px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     @media (min-width: $tabletMin) {
-      flex-direction: row;
       justify-content: space-between;
-      padding: 0 3rem;
+      padding: 0 0 0 0;
+      margin: 0 0 0 0;
+    }
+    @media (min-width: $laptopMin) {
+      width: 30%;
     }
     &__logo {
       position: relative;
@@ -69,32 +93,28 @@
       justify-content: center;
       align-content: center;
       flex-wrap: nowrap;
-      @media (min-width: $tabletMin) {
-        align-items: flex-start;
-        width: 45%;
-      }
+      text-align: center;
       .socialIcons {
         width: 100%;
         height: 50px;
         display: flex;
         flex-direction: row;
         margin: 1rem 0 0 0;
+        position: relative;
         @media (min-width: $tabletMin) {
           margin: 0 0 0 1rem;
         }
         &__logos {
           cursor: pointer;
+          position: relative;
         }
       }
     }
   }
-  &__legal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-family: $PNThin;
+  &__title {
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 1rem 0;
   }
   &__list {
     list-style: none;
@@ -105,7 +125,6 @@
     flex-direction: column;
     @media (min-width: $laptopMin) {
       display: flex;
-      height: 125px;
     }
     &__options {
       width: max-content;
@@ -126,5 +145,13 @@
     color: inherit;
     padding: 0px;
     margin: 0;
+  }
+  &__legal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: $PNThin;
   }
 }

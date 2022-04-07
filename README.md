@@ -2,7 +2,9 @@
 
 This is the front-end repository for the new redesign with features and graphics as approved by the executive team on February 2022.
 
-To see the approved mock-ups, you can check the [Figma](https://www.figma.com/file/gutKOohnBeOt50GV9UqXlJ/71lbs-Website-Redesign---V3?node-id=0%3A1).
+To see the approved mock-ups, you can check the [Figma](https://www.figma.com/file/sYMX24jwkYYIIe3zTdgcAa/71lbs-UI?node-id=206%3A210).
+
+Edit: NEW approved mock-ups as of April 4, 2022, you can check the [Figma](https://www.figma.com/file/sYMX24jwkYYIIe3zTdgcAa/71lbs-UI?node-id=206%3A2100).
 
 ✅It includes homepage, product/services pages, etc.
 
